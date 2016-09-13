@@ -15,7 +15,7 @@ module.exports = function loadImageAsDataURL(imgURI, cb){
     cb(null, canvas.toDataURL('image/png'));
   }
 
-  img.onerror = function(error){
+  img.onerror = function(e){
     cb(e, null);
   }
 
